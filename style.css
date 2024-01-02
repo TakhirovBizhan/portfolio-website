@@ -1,0 +1,208 @@
+/* inter-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v13-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.but_contact {
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(104deg, #FF8A00 28.97%, rgba(255, 31, 0, 0.00) 120.8%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    max-width: 200px;
+}
+
+header {
+    background-color: black;
+}
+
+.main_section {
+    background-color: black;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.wrapper_header {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 40px;
+
+}
+
+.area_header {
+    border-radius: 20px;
+    background: #353535;
+    min-height: 130px;
+    padding: 31px 73px 40px 59px;
+}
+
+.area_one {
+    border-radius: 20px;
+    background: #353535;
+    display: flex;
+    gap: 800px;
+    padding-top: 45px;
+    padding-left: 51px;
+    padding-bottom: 36px;
+}
+
+.area_two {
+    border-radius: 20px;
+    background: #353535;
+    margin-top: 75px;
+}
+
+.header_nav a {
+    color: #C8C8C8;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+.header_nav {
+    display: inline-flex;
+    height: 46px;
+    align-items: flex-start;
+    gap: 64px;
+    flex-shrink: 0;
+}
+
+.header_rock {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+}
+
+.i_tah {
+    color: #C8C8C8;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+.but_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 57px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(99deg, #FF7A00 19.72%, #FF1F00 100.14%);
+
+
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    background: linear-gradient(93deg, #FF8A00 10.24%, #FF1F00 105.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.about {
+    color: #FF7A00;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.i_am {}
