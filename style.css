@@ -1,3 +1,12 @@
+:root {
+    font-size: 62.5%;
+    --color-white: #ffff;
+    --block-color: #353535;
+    --orange-color: #FF7A00;
+    --text-color: #C8C8C8;
+    --color-black: #000;
+}
+
 /* montserrat-regular - cyrillic_latin */
 @font-face {
     font-display: swap;
@@ -87,6 +96,8 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: var(--text-color);
 }
 
 a {
@@ -94,7 +105,220 @@ a {
     color: inherit;
 }
 
-ul li {
-    text-decoration: none;
-    color: inherit;
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 4.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: linear-gradient(104deg, #FF8A00 28.97%, rgba(255, 31, 0, 0.00) 120.8%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 167px;
+    margin: 0;
+}
+
+h2 {
+    color: var(--color-white);
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.web_developer {
+    font-family: Montserrat;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    max-width: 555px;
+    background: linear-gradient(93deg, #FF8A00 10.24%, #FF1F00 105.07%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    margin: 0;
+    color: var(--orange-color);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+h4 {
+    margin: 0;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin: 0;
+}
+
+.block_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    margin: auto;
+    margin-top: 30px;
+    max-width: 1280px;
+    max-height: 100px;
+    border-radius: 20px;
+    background: var(--block-color);
+}
+
+.arrow {
+    min-width: 304px;
+    min-height: 269px;
+}
+
+.tahirov {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.standart_block {
+    max-width: 1280px;
+    max-height: 240px;
+    flex-shrink: 0;
+    background-color: var(--block-color);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 24px;
+}
+
+.line {
+    margin: auto;
+    width: 170px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: var(--orange-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    list-style-type: none;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.i_am {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    max-height: 50px;
+    max-width: 200px;
+    margin-top: 3px;
+    margin: auto;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(99deg, #FF7A00 19.72%, #FF1F00 100.14%);
+}
+
+.get_con {
+    color: var(--color-black);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+
+.i_have {
+    max-width: 722px;
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.42px;
+}
+
+.book {
+    min-width: 307px;
+    min-height: 276px;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about_me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fighter_zone {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.fighter_icon {
+    max-width: 333px;
+    max-height: 333px;
+}
+
+.big_block {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    max-height: 480px;
+    border-radius: 20px;
+    padding: 24px;
+    background: #353535;
+}
+
+.myself {
+    color: var(--orange-color);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
 }
