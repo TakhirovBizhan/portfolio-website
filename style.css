@@ -162,6 +162,13 @@ h3 {
 
 h4 {
     margin: 0;
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
 }
 
 p {
@@ -313,7 +320,15 @@ li {
     background: #353535;
 }
 
+.expo_fan {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+
+}
+
 .myself {
+    margin-top: -20px;
     color: var(--orange-color);
     font-family: Montserrat;
     font-size: 32px;
@@ -321,4 +336,86 @@ li {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.64px;
+}
+
+.circles {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.sector {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.job_area {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.my_expo {
+    display: flex;
+    gap: 18px;
+
+}
+
+.item {
+    color: var(--color-white);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.in_work {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.in_work_images {
+    max-width: 421px;
+    max-height: 265px;
+}
+
+.footer_full {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+}
+
+.sites {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.my_sites {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.find_me {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    color: var(--color-white);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.margin_auto {
+    margin: auto;
 }
