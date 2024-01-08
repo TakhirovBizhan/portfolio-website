@@ -95,8 +95,8 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
-    background-color: black;
+    padding: 24px;
+    background-color: var(--color-black);
     color: var(--text-color);
 }
 
@@ -187,7 +187,7 @@ p {
     padding: 24px;
     margin: auto;
     margin-top: 30px;
-    max-width: 1280px;
+    max-width: 1304px;
     max-height: 100px;
     border-radius: 20px;
     background: var(--block-color);
@@ -205,7 +205,7 @@ p {
 }
 
 .standart_block {
-    max-width: 1280px;
+    max-width: 1304px;
     max-height: 240px;
     flex-shrink: 0;
     background-color: var(--block-color);
@@ -281,8 +281,9 @@ li {
 }
 
 .book {
-    min-width: 307px;
+    min-width: 304px;
     min-height: 276px;
+    margin-right: 20px;
 }
 
 .student {
@@ -313,7 +314,7 @@ li {
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1280px;
+    max-width: 1304px;
     max-height: 480px;
     border-radius: 20px;
     padding: 24px;
@@ -322,9 +323,16 @@ li {
 
 .expo_fan {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 32px;
 
+}
+
+.in_work_images {
+    object-fit: contain;
+    height: auto;
+    max-height: 265px;
+    width: 50%;
 }
 
 .myself {
@@ -341,6 +349,7 @@ li {
 .circles {
     margin-top: auto;
     margin-bottom: auto;
+    min-width: 30px;
 }
 
 .sector {
@@ -378,11 +387,6 @@ li {
     flex-direction: column;
 }
 
-.in_work_images {
-    max-width: 421px;
-    max-height: 265px;
-}
-
 .footer_full {
     margin-bottom: 40px;
     display: flex;
@@ -418,4 +422,75 @@ li {
 
 .margin_auto {
     margin: auto;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .burger {
+        display: initial;
+    }
+
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .big_block {
+        max-height: none;
+    }
+
+    .standart_block {
+        max-height: none;
+
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+
+    .big_block {
+        flex-wrap: wrap;
+    }
+
+    .standart_block {
+        flex-wrap: wrap;
+    }
+
+    .circles {
+        margin-bottom: calc(8% - 10px);
+    }
+
+    .expo_fan {
+        flex-wrap: wrap;
+    }
+
+    .arrow {
+        margin: auto;
+    }
+
+    .book {
+        margin: auto;
+    }
+
+    .big_block {
+        margin-top: 30px;
+    }
+
+    .standart_block {
+        margin-top: 30px;
+    }
+
+    .block_header {
+
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .circles {}
 }
