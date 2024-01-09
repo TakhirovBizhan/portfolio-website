@@ -491,6 +491,41 @@ li {
     }
 }
 
-@media screen and (max-width: 510px) {
-    .circles {}
+@media screen and (max-width: 420px) {
+
+    .web_developer {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    li {
+        font-size: 1.5rem;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .big_block {
+        flex-wrap: nowrap;
+    }
+
+    .sites {
+        gap: 40px;
+    }
+
+    .arrow {
+        min-width: 100px;
+    }
+
+    .book {
+        min-width: 100px;
+    }
+
+    .circles {
+        margin-bottom: auto;
+    }
 }
