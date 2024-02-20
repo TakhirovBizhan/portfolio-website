@@ -448,6 +448,18 @@ li {
 
 /*---------------------------------------animation area------------------------------------*/
 
+.gain-center{
+    transition: 1s; /* Время эффекта */
+  }
+
+  .gain-center:hover {
+    font-size: larger; /* Увеличиваем масштаб */
+  }
+
+  circle:hover {
+    fill: #ff8800;
+}
+
 .block_header {
     box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
