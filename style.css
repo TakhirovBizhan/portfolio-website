@@ -318,7 +318,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     max-width: 1304px;
-    max-height: 480px;
+    max-height: fit-content;
     border-radius: 20px;
     padding: 24px;
     background: #353535;
@@ -421,22 +421,23 @@ li {
     line-height: normal;
     letter-spacing: 0.64px;
 }
+
 .my_abilities li {
     list-style: disc;
 
 }
 
 .my_abilities {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 2.1rem;
-line-height: 2.5rem;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-display: flex;
-flex-direction: column;
-gap: 35px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 
 }
 
@@ -535,17 +536,24 @@ gap: 35px;
 .abil_1 {
     margin-left: -32px;
 }
+
 .abil_2 {
-    margin-left: 28px; 
+    margin-left: 28px;
 }
+
 .abil_3 {
-    margin-left: -125px; margin-top: 3px;
+    margin-left: -125px;
+    margin-top: 3px;
 }
+
 .abil_4 {
-    margin-left: -170px; margin-top: 8px;
+    margin-left: -170px;
+    margin-top: 8px;
 }
+
 .abil_5 {
-    margin-top: 3px; margin-left: 12px; 
+    margin-top: 3px;
+    margin-left: 12px;
 }
 
 .skip-link:focus {
@@ -556,18 +564,100 @@ gap: 35px;
     margin-top: 10px;
 }
 
+.portfolio__list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.portfolio__item {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__item h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    z-index: 2;
+    position: absolute;
+}
+
+.first__portfolio:hover {
+    background-color: #0a7448;
+} 
+
+.second__portfolio:hover {
+    background-color: #330f0f;
+} 
+
+.last__portfolio:hover {
+    background-color: rgb(129, 23, 23);
+} 
+
+
+.portfolio__item p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    z-index: 2;
+    margin-top: 55px;
+    position: absolute;
+}
+
+.portfolio__item img {
+    z-index: 0;
+    position: relative;
+    object-fit: cover;
+}
+
+.first__portfolio {
+    background-color: #0C945C;
+}
+
+.second__portfolio {
+    background-color: #4A1818;
+
+}
+
+.last__portfolio {
+    background-color: rgb(163, 28, 28);
+}
+
+.src-hiden {
+    display: none;
+}
 
 /*---------------------------------------animation area------------------------------------*/
 
-.gain-center{
-    transition: 1s; /* Время эффекта */
-  }
+.gain-center {
+    transition: 1s;
+    /* Время эффекта */
+}
 
-  .gain-center:hover {
-    font-size: larger; /* Увеличиваем масштаб */
-  }
+.gain-center:hover {
+    font-size: larger;
+    /* Увеличиваем масштаб */
+}
 
-  circle:hover {
+circle:hover {
     fill: #ff8800;
 }
 
@@ -622,6 +712,7 @@ a:hover {
     .burger {
         display: initial;
     }
+
     .bout_am {
         flex-wrap: wrap;
     }
@@ -643,27 +734,36 @@ a:hover {
     .knowledge__list {
         display: none;
     }
+
     .abil_1 {
         margin-left: 0;
     }
+
     .abil_2 {
-        margin-left: 0; 
+        margin-left: 0;
     }
+
     .abil_3 {
-        margin-left: 0; margin-top: 0;
+        margin-left: 0;
+        margin-top: 0;
     }
+
     .abil_4 {
-        margin-left: 0; margin-top: 0;
+        margin-left: 0;
+        margin-top: 0;
     }
+
     .abil_5 {
-        margin-top: 0; margin-left: 0; 
+        margin-top: 0;
+        margin-left: 0;
     }
+
     .my_abilities {
         padding-right: 15px;
         padding-left: 15px;
 
     }
-    
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -676,6 +776,7 @@ a:hover {
         max-height: none;
 
     }
+
     .circle2 {
         display: none;
     }
@@ -720,6 +821,7 @@ a:hover {
 
         margin-top: 10px;
     }
+
     .knowledge__stack {
         flex-wrap: wrap;
         margin: auto;
@@ -727,12 +829,17 @@ a:hover {
         align-items: center;
         justify-content: center;
     }
+
     .knowledge__stack__inside {
         margin-top: 25px;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 441px) {
+
+    .portfolio__item img{
+        width: 275px;
+    }
 
     .web_developer {
         font-size: 4.2rem;
