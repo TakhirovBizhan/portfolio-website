@@ -481,8 +481,8 @@ li {
 .circle4 {
     position: absolute;
     z-index: -4;
-    top: 705px;
-    left: 340px;
+    top: 475px;
+    left: 40px;
 }
 
 .circle5 {
@@ -509,7 +509,7 @@ li {
 .circle8 {
     position: absolute;
     z-index: -4;
-    top: 2624px;
+    top: 2724px;
     left: 200px;
 }
 
@@ -645,6 +645,22 @@ li {
     display: none;
 }
 
+.opening__menu__block {
+    position: relative;
+}
+
+.hidden__menu {
+    background-color: #242424;
+    padding: 12px;
+    height: fit-content;
+    position: absolute;
+    right: 0%;
+    top: 80%;
+}
+.hidden__menu li{
+    margin-top: 5px;
+}
+
 /*---------------------------------------animation area------------------------------------*/
 
 .gain-center {
@@ -711,6 +727,15 @@ a:hover {
 @media screen and (max-width: 800px) {
     .burger {
         display: initial;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+    }
+    .burger:hover {
+        background-color: #242424;
+    }
+
+    .burger__rotate {
+        transform: rotate(90deg);
     }
 
     .bout_am {
@@ -784,6 +809,10 @@ a:hover {
 
 @media screen and (max-width: 740px) {
 
+    .src-hiden {
+        display: block;
+    }
+
 
     .big_block {
         flex-wrap: wrap;
@@ -835,10 +864,15 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 460px) {
 
     .portfolio__item img{
-        width: 275px;
+        width: 270px;
+    }
+
+    .portfolio__item{
+        width: 300px;
+        height: 300px;
     }
 
     .web_developer {

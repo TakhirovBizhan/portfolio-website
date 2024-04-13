@@ -1,3 +1,15 @@
+// menu
+
+const burgerMenu = document.getElementById('burger--menu');
+const hiddenMenu = document.getElementById('hidden--menu');
+
+
+const rotareFun = () => {
+    burgerMenu.classList.toggle('burger__rotate');
+    hiddenMenu.toggleAttribute('hidden');
+}
+burgerMenu.addEventListener('click', rotareFun);
+
 //first portfolio card
 
 const firstBlockPortfolio = document.getElementById('portfolio--block--one');
