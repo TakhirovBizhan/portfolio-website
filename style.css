@@ -206,7 +206,7 @@ p {
 
 .standart_block {
     max-width: 1304px;
-    max-height: 240px;
+    max-height: fit-content;
     flex-shrink: 0;
     background-color: var(--block-color);
     border-radius: 20px;
@@ -285,19 +285,21 @@ li {
     min-width: 304px;
     min-height: 276px;
     margin-right: 20px;
+    display: flex;
+    flex-shrink: 1;
 }
 
 .student {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 55px;
 }
 
 .bout_am {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .fighter_zone {
@@ -337,7 +339,6 @@ li {
 }
 
 .myself {
-    margin-top: -20px;
     color: var(--orange-color);
     font-family: Montserrat;
     font-size: 32px;
@@ -420,6 +421,38 @@ li {
     line-height: normal;
     letter-spacing: 0.64px;
 }
+.my_abilities li {
+    list-style: disc;
+
+}
+
+.my_abilities {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 2.1rem;
+line-height: 2.5rem;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+display: flex;
+flex-direction: column;
+gap: 35px;
+
+}
+
+.knowledge__stack {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.knowledge__stack__inside {
+    display: flex;
+}
+
 /*---------------------------------------background------------------------------------*/
 
 .circle1 {
@@ -499,9 +532,28 @@ li {
     font-size: 2.2rem;
 }
 
+.abil_1 {
+    margin-left: -32px;
+}
+.abil_2 {
+    margin-left: 28px; 
+}
+.abil_3 {
+    margin-left: -125px; margin-top: 3px;
+}
+.abil_4 {
+    margin-left: -170px; margin-top: 8px;
+}
+.abil_5 {
+    margin-top: 3px; margin-left: 12px; 
+}
 
 .skip-link:focus {
     transform: translateY(20%);
+}
+
+.knowledge__list {
+    margin-top: 10px;
 }
 
 
@@ -570,13 +622,51 @@ a:hover {
     .burger {
         display: initial;
     }
+    .bout_am {
+        flex-wrap: wrap;
+    }
+
+    .book {
+        margin: auto;
+    }
 
     .nav {
         display: none;
     }
+
+    .circle__background {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
+    .knowledge__list {
+        display: none;
+    }
+    .abil_1 {
+        margin-left: 0;
+    }
+    .abil_2 {
+        margin-left: 0; 
+    }
+    .abil_3 {
+        margin-left: 0; margin-top: 0;
+    }
+    .abil_4 {
+        margin-left: 0; margin-top: 0;
+    }
+    .abil_5 {
+        margin-top: 0; margin-left: 0; 
+    }
+    .my_abilities {
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
 
     .big_block {
         max-height: none;
@@ -585,6 +675,9 @@ a:hover {
     .standart_block {
         max-height: none;
 
+    }
+    .circle2 {
+        display: none;
     }
 }
 
@@ -626,6 +719,16 @@ a:hover {
     .block_header {
 
         margin-top: 10px;
+    }
+    .knowledge__stack {
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .knowledge__stack__inside {
+        margin-top: 25px;
     }
 }
 
