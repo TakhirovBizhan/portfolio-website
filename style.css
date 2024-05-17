@@ -113,7 +113,7 @@ ul {
 
 .logotype {
     font-family: Montserrat;
-    font-size: 4.2rem;
+    font-size: 3.7rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -121,7 +121,7 @@ ul {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    max-width: 167px;
+    max-width: fit-content;
     margin: 0;
 }
 
@@ -136,14 +136,20 @@ h2 {
     margin: 0;
 }
 
+.profile__picture {
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: rgba(255, 131, 15, 0.4) 5px 5px, rgba(240, 69, 46, 0.3) 10px 10px, rgba(240, 101, 46, 0.2) 15px 15px, rgba(255, 5, 5, 0.1) 20px 20px, rgba(255, 0, 0, 0.05) 25px 25px;
+    display: flex;
+}
+
 .web_developer {
     font-family: Montserrat;
-    font-size: 6.4rem;
+    font-size: 6.1rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.28px;
-    max-width: 555px;
     background: linear-gradient(93deg, #FF8A00 10.24%, #FF1F00 105.07%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -184,11 +190,13 @@ p {
 
 .block_header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
     padding: 24px;
     margin: auto;
     max-width: 1304px;
-    max-height: 100px;
     border-radius: 20px;
     background: var(--block-color);
 }
@@ -241,7 +249,8 @@ li {
 
 .i_am {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 50px;
     align-items: center;
 }
 
@@ -294,6 +303,10 @@ li {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 55px;
+}
+
+.logotype_new {
+    display: none;
 }
 
 .bout_am {
@@ -598,15 +611,15 @@ li {
 
 .first__portfolio:hover {
     background-color: #0a7448;
-} 
+}
 
 .second__portfolio:hover {
     background-color: #330f0f;
-} 
+}
 
 .last__portfolio:hover {
     background-color: rgb(129, 23, 23);
-} 
+}
 
 
 .portfolio__item p {
@@ -657,10 +670,14 @@ li {
     right: 0%;
     top: 80%;
 }
-.hidden__menu li{
+
+.hidden__menu li {
     margin-top: 5px;
 }
 
+.location {
+    display: flex; 
+}
 /*---------------------------------------animation area------------------------------------*/
 
 .gain-center {
@@ -719,36 +736,25 @@ a:hover {
     box-shadow: inset 0 0 2px 2px var(--color-black);
 }
 
-.logotype:hover {
+.logotype {
     background-color: #ff0000;
-    transition-duration: 550ms;
 }
 
 @media screen and (max-width: 800px) {
-    .burger {
-        display: initial;
-        transition: transform 0.7s;
-        transform-style: preserve-3d;
-    }
-    .burger:hover {
-        background-color: #242424;
-    }
 
-    .burger__rotate {
-        transform: rotate(90deg);
+    .standart_block {
+        flex-direction: column;
     }
 
     .bout_am {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .book {
         margin: auto;
     }
 
-    .nav {
-        display: none;
-    }
 
     .circle__background {
         display: none;
@@ -793,6 +799,14 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
 
+    .web_developer {
+        font-size: 4.9rem;
+    }
+
+    .src-hiden {
+        display: block;
+    }
+
     .big_block {
         max-height: none;
     }
@@ -809,9 +823,6 @@ a:hover {
 
 @media screen and (max-width: 740px) {
 
-    .src-hiden {
-        display: block;
-    }
 
 
     .big_block {
@@ -820,6 +831,7 @@ a:hover {
 
     .standart_block {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .circles {
@@ -864,19 +876,65 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 520px) {
 
-    .portfolio__item img{
-        width: 270px;
+    .block_header {
+        flex-direction: row;
     }
 
-    .portfolio__item{
-        width: 300px;
-        height: 300px;
+    .logotype {
+        display: none;
+    }
+
+    .logotype_new {
+        font-family: Montserrat;
+        font-size: 3.3rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        background: linear-gradient(104deg, #FF8A00 28.97%, rgba(255, 30, 0, 0.603) 120.8%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        max-width: fit-content;
+        margin: 0;
+        display: block;
     }
 
     .web_developer {
-        font-size: 4.2rem;
+        font-size: 3.6rem;
+    }
+
+    .profile__picture {
+        width: 260px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: initial;
+        transition: transform 0.7s;
+        transform-style: preserve-3d;
+    }
+
+    .burger:hover {
+        background-color: #242424;
+    }
+
+    .burger__rotate {
+        transform: rotate(90deg);
+    }
+
+
+    .portfolio__item img {
+        width: 270px;
+    }
+
+    .portfolio__item {
+        width: 300px;
+        height: 300px;
     }
 
     h2 {
